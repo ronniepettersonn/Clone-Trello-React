@@ -305,13 +305,15 @@ function App() {
                 </div>
                 {
                   isForm ? (
-                    <form action="" onSubmit={handleSubmitColumn} className='flex flex-col py-3 px-2 w-[272px] bg-gray-200 rounded-xl h-fit shadow-[0px_1px_1px_#091E4240,0px_0px_1px_#091E424F]'>
-                      <input className='h-8 py-2 px-3 mb-2 rounded' type="text" name='name' value={nameColumn} onChange={e => setNameColumn(e.target.value)} placeholder='Insira o título da lista...' />
-                      <div className='flex gap-4'>
-                        <button type='submit' className='bg-blue-600 text-white rounded-md text-sm px-3 py-2 w-fit'>Adicionar Lista</button>
-                        <button onClick={() => setIsForm(false)}>X</button>
-                      </div>
-                    </form>
+                    <div>
+                      <form action="" onSubmit={handleSubmitColumn} className='flex flex-col py-3 px-2 w-[272px] bg-gray-200 rounded-xl h-fit shadow-[0px_1px_1px_#091E4240,0px_0px_1px_#091E424F]'>
+                        <input className='h-8 py-2 px-3 mb-2 rounded' type="text" name='name' value={nameColumn} onChange={e => setNameColumn(e.target.value)} placeholder='Insira o título da lista...' />
+                        <div className='flex gap-4'>
+                          <button type='submit' className='bg-blue-600 text-white rounded-md text-sm px-3 py-2 w-fit'>Adicionar Lista</button>
+                          <button onClick={() => setIsForm(false)}>X</button>
+                        </div>
+                      </form>
+                    </div>
                   ) : (
                     <div>
                       <button
