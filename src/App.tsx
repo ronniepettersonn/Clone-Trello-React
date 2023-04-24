@@ -313,10 +313,12 @@ function App() {
                       </div>
                     </form>
                   ) : (
-                    <button
-                      className='w-[272px] h-fit p-4 bg-[#ffffff3d;] rounded-xl text-white text-left'
-                      onClick={() => setIsForm(true)}
-                    >+ Adicionar outra lista</button>
+                    <div>
+                      <button
+                        className='w-[272px] h-fit p-4 bg-[#ffffff3d;] rounded-xl text-white text-left'
+                        onClick={() => setIsForm(true)}
+                      >+ Adicionar outra lista</button>
+                    </div>
                   )
                 }
 
